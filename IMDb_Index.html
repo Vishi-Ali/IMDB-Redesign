@@ -5,12 +5,45 @@
             Internet Movie Database
         </title>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="IMDb_Styles.css">
     </head>
 
-    <body style="background-color: rgba(24,24,24,255);">
+    <body class="webpage">
         <div class="header">
-            <img src="Icons/IMDb Logo.png">
+            <div class="left-header">
+                <img class="imdb-logo" src="Icons/IMDb Logo.png">
+                <p class="movies-header">Movies</p>
+                <p class="shows-header">TV Shows</p>
+                <p class="celebs-header">Celebs</p>
+                <p class="watch-header">Watch</p>
+                <p class="awards-header">Awards</p>
+                <p class="community-header">Community</p>
+            </div>
+
+            <div class="mid-header">
+                <p class="all-header">All</p>
+                <img class="dropdown-icon" src="Icons/Dropdown Icon.png">
+                <input class="search-bar" type="text" placeholder="Search IMDb">
+                <button class="search-button">
+                    <img class="search-icon" src="Icons/Search Icon.png">
+                </button>
+            </div>
+
+            <div class="right-header">
+                <img class="watchlist-icon" src="Icons/Watchlist Icon.png">
+                <p class="watchlist-header">Watchlist</p>
+                <div class="pfp-background">
+                    <img class="pfp-icon" src="Icons/User Pfp Icon.png">
+                </div>
+                <p class="user-header">User</p>
+                <p class="en-header">EN</p>
+                <img class="dropdown-icon" src="Icons/Dropdown Icon.png">
+                <img class="brightness-icon" src="Icons/Brightness Icon.png">
+            </div>
         </div>
     </body>
 </html>
