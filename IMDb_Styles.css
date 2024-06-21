@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     padding-top: 70px;
-    height: 1000px;
+    background-image: radial-gradient(rgba(167,158,140,0.5),rgba(8,8,8,255));
 }
 
 p {
@@ -163,7 +163,7 @@ p {
 }
 
 .main-play-background {
-    background-color: rgba(26,26,26,255);
+    background-color: rgba(26,26,26,0.4);
     height: 90px;
     width: 90px;
     display: flex;
@@ -200,6 +200,7 @@ p {
     display: flex;
     flex: 1;
     margin-left: 25px;
+    flex-direction: column;
 }
 
 .upcoming-movies-title {
@@ -231,7 +232,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(26,26,26,255);
+    background-color: rgba(26,26,26,1);
     border-radius: 10px;
     padding: 0px 12px 0px 15px;
     height: 32px;
@@ -244,4 +245,92 @@ p {
 
 .arrow-icon {
     height: 6px;
+}
+
+.upcoming-movies-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.upcoming-card-penguin {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-image: url("movie-pictures/shots/the-penguin.jpg");
+    background-size: 100%;
+    border-radius: 15px;
+}
+
+.upcoming-card-front-room {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-image: url("movie-pictures/shots/the-front-room.webp");
+    background-size: 100%;
+    border-radius: 15px;
+}
+
+.upcoming-card-house-dragon {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-image: url("movie-pictures/shots/house-of-dragon.webp");
+    background-size: 100%;
+    border-radius: 15px;
+}
+
+.upcoming-content {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    backdrop-filter: brightness(50%);
+}
+
+.upcoming-card-poster {
+    height: 110px;
+    margin: 12px 0px 12px 5px;
+    border-radius: 5px;
+}
+
+.upcoming-card-runtime {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 12px;
+    margin-top: 7px;
+}
+
+.upcoming-play-background {
+    background-color: rgba(26,26,26,255);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.upcoming-play {
+    height: 25px;
+}
+
+.upcoming-movie-time {
+    margin-left: 15px;
+    font-size: 13px;
+    color: rgba(108,108,108,255);
+}
+
+.upcoming-card-desc {
+    margin-left: 15px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.upcoming-card-title {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.upcoming-card-byline {
+    font-size: 12px;
+    margin-top: 0px;
 }
