@@ -1,14 +1,21 @@
 .webpage {
-    background-color: rgba(8,8,8,255);
+    background-color: rgb(8,8,8);
     padding: 0;
     margin: 0;
     padding-top: 70px;
-    background-image: radial-gradient(rgba(167,158,140,0.5),rgba(8,8,8,255));
+    font-family: Roboto, Arial;
+    height: 2000px;
+}
+
+.background-blur {
+    background-image: radial-gradient(rgba(167,158,140,0.55),rgba(8,8,8,255));
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, transparent 100%);
+    padding-bottom: 150px;
 }
 
 p {
     color: rgba(175,175,175,255);
-    font-family: Roboto, Arial;
+    margin: 0px;
 }
 
 .header {
@@ -78,10 +85,10 @@ p {
     background-color: transparent;
     border: none;
     color: rgba(175,175,175,255);
-    font-family: Roboto, Arial;
     font-size: 14px;
     height: 30px;
     margin-right: 15px;
+    outline: none;
 }
 
 .search-button {
@@ -333,4 +340,171 @@ p {
 .upcoming-card-byline {
     font-size: 12px;
     margin-top: 0px;
+}
+
+.top-pick-section {
+    display: flex;
+    flex: 1;
+    margin: -70px 255px 15px 255px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.top-pick-next,
+.top-pick-prev {
+    height: 12px;
+}
+
+.top-pick-controls {
+    display: flex;
+    padding: 0px;
+    height: 40px;
+}
+
+.top-pick-prev-bg,
+.top-pick-next-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40px;
+    border-radius: 50px;
+    background-color: rgba(108,108,108,0.15);
+}
+
+.top-pick-next-bg {
+    margin-left: 10px;
+    background-color: rgba(108,108,108,0.5);
+}
+
+.top-pick-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-pick-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.top-pick-bullet {
+    height: 4px;
+    margin-right: 7px;
+}
+
+.top-pick {
+    font-size: 21px;
+    margin-right: 7px;
+    color: white
+}
+
+.top-pick-arrow {
+    height: 25px;
+}
+
+.top-pick-byline {
+    margin-top: 10px;
+    color: rgba(108,108,108,255);
+    font-size: 12px;
+}
+
+.top-pick-carousel {
+    margin: 0px 250px 0px 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.top-pick-card {
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    background: linear-gradient(transparent, rgb(14,14,14));
+}
+
+.top-pick-poster {
+    height: 200px;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+.top-pick-poster-container {
+    position: relative;
+}
+
+.top-pick-watchlist {
+    position: absolute;
+    height: 35px;
+    left: 6px;
+    top: -3px;
+    opacity: 0.55;
+}
+
+.top-pick-plus {
+    position: absolute;
+    left: 20px;
+    top: 1px;
+    color: white;
+    opacity: 0.9;
+}
+
+.top-pick-name {
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.top-pick-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 5px 15px 5px;
+}
+
+.site-rating,
+.user-rating {
+    display: flex;
+    align-items: center;
+}
+
+.star-filled-icon,
+.star-empty-icon,
+.movie-info img {
+    height: 12px;
+}
+
+.star-empty-icon,
+.movie-info img {
+    cursor: pointer;
+}
+
+.imdb-rating,
+.user-rating p {
+    margin-left: 7px;
+    font-size: 14px;
+}
+
+.trailer-button-bg {
+    background-color: rgba(26,26,26,255);
+    border: none;
+    border-radius: 7px;
+    text-align: left;
+    padding: 7px 0px 7px 0px;
+    cursor: pointer;
+}
+
+.trailer-button {
+    display: flex;
+    align-items: center;
+}
+
+.trailer-button img {
+    height: 18px;
+    margin-left: 10px;
+}
+
+.trailer-button p {
+    margin-left: 9px;
+    font-size: 12px;
 }
