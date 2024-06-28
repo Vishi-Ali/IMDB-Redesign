@@ -4,7 +4,7 @@
     margin: 0;
     padding-top: 70px;
     font-family: Roboto, Arial;
-    height: 2000px;
+    height: 5000px;
 }
 
 .background-blur {
@@ -243,6 +243,12 @@ p {
     border-radius: 10px;
     padding: 0px 12px 0px 15px;
     height: 32px;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.browse-button:hover {
+    filter: brightness(1.5);
 }
 
 .browse-heading {
@@ -348,21 +354,38 @@ p {
     margin: -70px 255px 15px 255px;
     justify-content: space-between;
     flex-direction: row;
+    position: relative;
 }
 
-.top-pick-next,
-.top-pick-prev {
+.what-to-watch {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -60px;
+    justify-content: center;
+    z-index: -5;
+}
+
+.what-to-watch p {
+    font-weight: 700;
+    font-size: 150px;
+    filter: brightness(0.2);
+}
+
+.subpart-next,
+.subpart-prev {
     height: 12px;
 }
 
-.top-pick-controls {
+.subpart-controls {
     display: flex;
     padding: 0px;
     height: 40px;
 }
 
-.top-pick-prev-bg,
-.top-pick-next-bg {
+.subpart-prev-bg,
+.subpart-next-bg {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -372,7 +395,7 @@ p {
     background-color: rgba(108,108,108,0.15);
 }
 
-.top-pick-next-bg {
+.subpart-next-bg {
     margin-left: 10px;
     background-color: rgba(108,108,108,0.5);
 }
@@ -409,7 +432,7 @@ p {
     font-size: 12px;
 }
 
-.top-pick-carousel {
+.subpart-carousel {
     margin: 0px 250px 0px 250px;
     display: flex;
     flex-direction: row;
@@ -417,24 +440,26 @@ p {
 
 }
 
-.top-pick-card {
+.subpart-card {
     display: flex;
     flex-direction: column;
     padding: 7px;
     background: linear-gradient(transparent, rgb(14,14,14));
 }
 
-.top-pick-poster {
+.subpart-poster {
     height: 200px;
+    width: 133px;
+    object-fit: cover;
     border-radius: 5px;
     margin: 0px;
 }
 
-.top-pick-poster-container {
+.subpart-poster-container {
     position: relative;
 }
 
-.top-pick-watchlist {
+.subpart-watchlist {
     position: absolute;
     height: 35px;
     left: 6px;
@@ -442,7 +467,7 @@ p {
     opacity: 0.55;
 }
 
-.top-pick-plus {
+.subpart-plus {
     position: absolute;
     left: 20px;
     top: 1px;
@@ -450,13 +475,19 @@ p {
     opacity: 0.9;
 }
 
-.top-pick-name {
+.subpart-name {
     margin: 0px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
-.top-pick-details {
+.subpart-name:hover {
+    text-decoration: underline;
+}
+
+.subpart-details {
     display: flex;
+    flex: 1;
     justify-content: space-between;
     align-items: center;
     margin: 15px 5px 15px 5px;
@@ -497,6 +528,11 @@ p {
 .trailer-button {
     display: flex;
     align-items: center;
+    transition: filter 0.2s;
+}
+
+.trailer-button:hover {
+    filter: brightness(2);
 }
 
 .trailer-button img {
@@ -507,4 +543,203 @@ p {
 .trailer-button p {
     margin-left: 9px;
     font-size: 12px;
+}
+
+.streaming-section {
+    display: flex;
+    flex: 1;
+    margin: 30px 255px 15px 255px;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+}
+
+.streaming-controls {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.streaming-now {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    justify-content: center;
+    z-index: -5;
+}
+
+.streaming-now p {
+    font-weight: 700;
+    font-size: 146px;
+    filter: brightness(0.2);
+}
+
+.platforms-bg {
+    display: flex;
+    background-color: rgba(26,26,26,255);
+    padding: 7px 10px;
+    border-radius: 10px;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.platforms-button,
+.platforms-button-active {
+    background-color: rgba(26,26,26,255);
+    border: none;
+    color: rgba(175,175,175,255);
+    padding: 9px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.platforms-button-active {
+    background-color: rgba(221,176,20,255);
+    color: black;
+}
+
+.platforms-button:hover,
+.platforms-button-active:hover {
+    filter: brightness(2);
+}
+
+.watch-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+    transition: filter 0.2s;
+}
+
+.watch-button:hover {
+    filter: brightness(2);
+}
+
+.watch-button img {
+    height: 18px;
+}
+
+.watch-button p {
+    font-size: 12px;
+}
+
+.explore-section {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 30px 255px 0px 255px;
+}
+
+.explore {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 150px;
+    font-weight: 700;
+    filter: brightness(0.2);
+    z-index: -5;
+}
+
+.box-office-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top: 80px;
+}
+
+.explore-carousel {
+    display: grid;
+    margin: 0px 250px 0px 250px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.explore-card {
+    margin: 10px 6px;
+    display: flex;
+    background-color: rgba(26,26,26,1);
+    padding: 15px 10px;
+    align-items: flex-start;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.explore-card:hover {
+    filter: brightness(1.3);
+}
+
+.office-top {
+    display: flex;
+    align-items: center;
+}
+
+.office-position {
+    margin: 0;
+    font-size: 20px;
+}
+
+.office-sep {
+    height: 50px;
+    margin: 0px -7px 0px -12px;
+}
+
+.office-poster {
+    height: 150px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.poster-container {
+    position: relative;
+    margin-right: 15px;
+}
+
+.office-watchlist {
+    position: absolute;
+    top: -3.1px;
+    left: 3px;
+    height: 30px;
+    opacity: 0.55;
+}
+
+.office-watchlist-plus {
+    position: absolute;
+    top: 0px;
+    left: 14px;
+    color: white;
+    opacity: 0.9;
+}
+
+.office-dets {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.office-title {
+    font-weight: 500;
+}
+
+.office-money {
+    color: rgba(108,108,108,255);
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.office-rates {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0px;
 }
