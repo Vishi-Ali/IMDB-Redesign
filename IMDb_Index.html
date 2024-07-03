@@ -16,12 +16,113 @@
         <div class="header">
             <div class="left-header">
                 <img class="imdb-logo" src="icons/IMDb Logo.png">
-                <p class="movies-header">Movies</p>
-                <p class="shows-header">TV Shows</p>
-                <p class="celebs-header">Celebs</p>
-                <p class="watch-header">Watch</p>
-                <p class="awards-header">Awards</p>
-                <p class="community-header">Community</p>
+                <div class="movies-container">
+                    <p class="movies-header">Movies</p>
+                    <div class="header-hover">
+                        <div class="hover-text">
+                            <div class="text-col1">
+                                <p>Top 250 Movies</p>
+                                <p>Most Popular Movies</p>
+                                <p>Top Box Office</p>
+                            </div>
+            
+                            <div class="text-col2">
+                                <p>Release Calendar</p>
+                                <p>Browse Movies by Genre</p>
+                                <p>Movie News</p>
+                                <p>Showtimes and Tickets</p>
+                                <p>India Movie Spotlight</p>
+                            </div>
+                        </div>
+                        <img src="icons/Movies Dropdown Icon.png">
+                    </div>
+                </div>
+                <div class="shows-container">
+                    <p class="shows-header">TV Shows</p>
+                    <div class="header-hover">
+                        <div class="hover-text">
+                            <div class="text-col1">
+                                <p>Top 250 TV Shows</p>
+                                <p>Most Popular TV Shows</p>
+                            </div>
+            
+                            <div class="text-col2">
+                                <p>What's on TV & Streaming</p>
+                                <p>Browse TV Shows by Genre</p>
+                                <p>TV News</p>
+                            </div>
+                        </div>
+                        <img src="icons/TV Shows Dropdown Icon.png">
+                    </div>
+                </div>
+                <div class="celebs-container">
+                    <p class="celebs-header">Celebs</p>
+                    <div class="header-hover">
+                        <div class="hover-text">
+                            <div class="text-col1">
+                                <p>Most Popular Celebs</p>
+                            </div>
+            
+                            <div class="text-col2">
+                                <p>Born Today</p>
+                                <p>Celebrity News</p>
+                            </div>
+                        </div>
+                        <img src="icons/Celebs Dropdown Icon.png">
+                    </div>
+                </div>
+                <div class="watch-container">
+                    <p class="watch-header">Watch</p>
+                    <div class="header-hover">
+                        <div class="hover-text">
+                            <div class="text-col1">
+                                <p>What to Watch</p>
+                                <p>Latest Trailers</p>
+                            </div>
+            
+                            <div class="text-col2">
+                                <p>IMDb Originals</p>
+                                <p>IMDb Picks</p>
+                                <p>IMDb Spotlight</p>
+                                <p>IMDb Podcasts</p>
+                            </div>
+                        </div>
+                        <img src="icons/Watch Dropdown Icon.png">
+                    </div>
+                </div>
+                <div class="awards-container">
+                    <p class="awards-header">Awards</p>
+                    <div class="header-hover">
+                        <div class="hover-text">
+                            <div class="text-col1">
+                                <p>Oscars</p>
+                                <p>SXSW Film Festival</p>
+                                <p>STARmeter Awards</p>
+                                <p>Women's History Month</p>
+                                <p>All Events</p>
+                            </div>
+            
+                            <div class="text-col2">
+                                <p>Awards Central</p>
+                                <p>Festival Central</p>
+                            </div>
+                        </div>
+                        <img src="icons/Awards Dropdown Icon.png">
+                    </div>
+                </div>
+                <div class="community-container">
+                    <p class="community-header">Community</p>
+                    <div class="header-hover">
+                        <div class="hover-text">
+                            <div class="text-col1">
+                                <p>Help Center</p>
+                                <p>Contributor Zone</p>
+                                <p>Polls</p>
+                            </div>
+                        </div>
+                        <img src="icons/Community Dropdown Icon.png">
+                    </div>
+                </div>
             </div>
 
             <div class="mid-header">
@@ -49,7 +150,11 @@
             <div class="movie-carousel">
                 <div class="main-movie">
                     <img class="main-movie-shot" src="movie-pictures/shots/deadpool-&-wolverine.jpg">
-                    <img class="main-movie-poster" src="movie-pictures/posters/deadpool-&-wolverine.jpg">
+                    <div class="main-poster-container">
+                        <img class="main-movie-poster" src="movie-pictures/posters/deadpool-&-wolverine.jpg">
+                        <img class="main-movie-watchlist" src="icons/Watchlist Black Icon.png">
+                        <p class="main-movie-plus">+</p>
+                    </div>
                     <div class="main-play-background">
                         <img class="main-movie-play" src="icons/Play Icon.png">
                     </div>
@@ -743,6 +848,89 @@
                 </div>
             </div>
         </div>
+        <div class="coming-soon-section">
+            <div class="coming-soon-heading">
+                <div class="coming-soon-title">
+                    <img class="coming-soon-dot" src="icons/Bullet Point Icon.png">
+                    <p>Coming soon to theaters</p>
+                    <img class="coming-soon-arrow" src="icons/Right Arrow Grey Icon.png">
+                </div>
+                <p class="coming-soon-byline">Trailers for Upcoming Releases</p>
+            </div>
+            <div class="subpart-controls">
+                <div class="subpart-prev-bg">
+                    <img class="subpart-prev" src="icons/Left Arrowhead Icon.png">
+                </div>
+                <div class="subpart-next-bg">
+                    <img class="subpart-next" src="icons/Right Arrowhead White Icon.png">
+                </div>
+            </div>
+        </div>
+        <div class="coming-soon-carousel">
+            <div class="coming-soon-card">
+                <div class="coming-soon-shot-container">
+                    <img class="coming-soon-shot" src="movie-pictures/shots/deadpool-&-wolverine-trailer.jpg">
+                    <img class="subpart-watchlist" src="icons/Watchlist Black Icon.png">
+                    <p class="subpart-plus">+</p>
+                    <div class="coming-soon-trailer">
+                        <img class="coming-soon-play" src="icons/Play Icon.png">
+                        <p>1:01</p>
+                    </div>
+                </div>
+                <div class="coming-soon-date">
+                    <img class="coming-soon-calendar" src="icons/Calendar Icon.png">
+                    <p>July 26</p>
+                </div>
+                <p class="coming-soon-name">Deadpool & Wolverine</p>
+            </div>
+            <div class="coming-soon-card">
+                <div class="coming-soon-shot-container">
+                    <img class="coming-soon-shot" src="movie-pictures/shots/longlegs-trailer.jpg">
+                    <img class="subpart-watchlist" src="icons/Watchlist Black Icon.png">
+                    <p class="subpart-plus">+</p>
+                    <div class="coming-soon-trailer">
+                        <img class="coming-soon-play" src="icons/Play Icon.png">
+                        <p>1:04</p>
+                    </div>
+                </div>
+                <div class="coming-soon-date">
+                    <img class="coming-soon-calendar" src="icons/Calendar Icon.png">
+                    <p>July 12</p>
+                </div>
+                <p class="coming-soon-name">Longlegs</p>
+            </div>
+            <div class="coming-soon-card">
+                <div class="coming-soon-shot-container">
+                    <img class="coming-soon-shot" src="movie-pictures/shots/maxxxine-trailer.jpg">
+                    <img class="subpart-watchlist" src="icons/Watchlist Black Icon.png">
+                    <p class="subpart-plus">+</p>
+                    <div class="coming-soon-trailer">
+                        <img class="coming-soon-play" src="icons/Play Icon.png">
+                        <p>1:26</p>
+                    </div>
+                </div>
+                <div class="coming-soon-date">
+                    <img class="coming-soon-calendar" src="icons/Calendar Icon.png">
+                    <p>July 5</p>
+                </div>
+                <p class="coming-soon-name">MaXXXine</p>
+            </div>
+            <div class="coming-soon-card">
+                <div class="coming-soon-shot-container">
+                    <img class="coming-soon-shot" src="movie-pictures/shots/despicable-me-trailer.jpg">
+                    <img class="subpart-watchlist" src="icons/Watchlist Black Icon.png">
+                    <p class="subpart-plus">+</p>
+                    <div class="coming-soon-trailer">
+                        <img class="coming-soon-play" src="icons/Play Icon.png">
+                        <p>2:46</p>
+                    </div>
+                </div>
+                <div class="coming-soon-date">
+                    <img class="coming-soon-calendar" src="icons/Calendar Icon.png">
+                    <p>July 3</p>
+                </div>
+                <p class="coming-soon-name">Despicable Me 4</p>
+            </div>
         </div>
     </body>
 </html>

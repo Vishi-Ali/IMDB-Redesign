@@ -59,6 +59,70 @@ p {
 .user-header,
 .en-header {
     font-size: 14px;
+    cursor: default;
+}
+
+.header-hover {
+    display: none;
+    position: absolute;
+    top: 47px;
+    left: 0px;
+    background-color: rgb(8,8,8);
+    flex-direction: row;
+    width: 100%;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.movies-container:hover .header-hover {
+    display: flex;
+}
+
+.shows-container:hover .header-hover {
+    display: flex;
+}
+
+.celebs-container:hover .header-hover {
+    display: flex;
+}
+
+.watch-container:hover .header-hover {
+    display: flex;
+}
+
+.awards-container:hover .header-hover {
+    display: flex;
+}
+
+.community-container:hover .header-hover {
+    display: flex;
+}
+
+.hover-text {
+    display: flex;
+}
+
+.text-col1,
+.text-col2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-col1 p,
+.text-col2 p {
+    color: white;
+    margin: 15px 70px 15px 10px;
+}
+
+.text-col1 p:hover,
+.text-col2 p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.header-hover img {
+    margin: 30px 200px;
+    height: 200px;
 }
 
 .mid-header {
@@ -95,7 +159,14 @@ p {
     cursor: pointer;
     background-color: rgba(26,26,26,255);
     border: none;
-    margin-right: 15px;
+    height: 100%;
+    width: 70px;
+    border-radius: 10px;
+    transition: filter 0.2s;
+}
+
+.search-button:active {
+    filter: brightness(2);
 }
 
 .search-icon {
@@ -161,12 +232,39 @@ p {
     -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 65%, transparent 85%);
 }
 
+.main-poster-container {
+    position: relative;
+}
+
+.main-movie-watchlist {
+    position: absolute;
+    height: 40px;
+    opacity: 0.55;
+    top: -304px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.main-movie-plus {
+    font-size: 20px;
+    position: absolute;
+    color: white;
+    opacity: 0.9;
+    cursor: pointer;
+    top: -300px;
+    left: 35px;
+}
+
 .main-movie-poster {
     position: absolute;
     bottom: 0;
     left: 15px;
     height: 300px;
     border-radius: 9px;
+}
+
+.main-movie-poster:hover {
+    filter: brightness(0.8);
 }
 
 .main-play-background {
@@ -181,6 +279,11 @@ p {
     bottom: 0;
     left: 240px;
     cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.main-play-background:hover {
+    filter: brightness(2);
 }
 
 .main-movie-play {
@@ -271,6 +374,7 @@ p {
     background-image: url("movie-pictures/shots/the-penguin.jpg");
     background-size: 100%;
     border-radius: 15px;
+    transition: filter 0.2s;
 }
 
 .upcoming-card-front-room {
@@ -279,6 +383,7 @@ p {
     background-image: url("movie-pictures/shots/the-front-room.webp");
     background-size: 100%;
     border-radius: 15px;
+    transition: filter 0.2s;
 }
 
 .upcoming-card-house-dragon {
@@ -287,6 +392,13 @@ p {
     background-image: url("movie-pictures/shots/house-of-dragon.webp");
     background-size: 100%;
     border-radius: 15px;
+    transition: filter 0.2s;
+}
+
+.upcoming-card-penguin:hover,
+.upcoming-card-front-room:hover,
+.upcoming-card-house-dragon:hover {
+    filter: brightness(0.8);
 }
 
 .upcoming-content {
@@ -319,6 +431,11 @@ p {
     align-items: center;
     border-radius: 25px;
     cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.upcoming-play-background:hover {
+    filter: brightness(2);
 }
 
 .upcoming-play {
@@ -445,6 +562,11 @@ p {
     flex-direction: column;
     padding: 7px;
     background: linear-gradient(transparent, rgb(14,14,14));
+    transition: filter 0.2s;
+}
+
+.subpart-card:hover {
+    filter: brightness(0.8);
 }
 
 .subpart-poster {
@@ -465,6 +587,7 @@ p {
     left: 6px;
     top: -3px;
     opacity: 0.55;
+    cursor: pointer;
 }
 
 .subpart-plus {
@@ -473,6 +596,7 @@ p {
     top: 1px;
     color: white;
     opacity: 0.9;
+    cursor: pointer;
 }
 
 .subpart-name {
@@ -497,6 +621,14 @@ p {
 .user-rating {
     display: flex;
     align-items: center;
+}
+
+.user-rating {
+    transition: filter 0.2s;
+}
+
+.user-rating:hover {
+    filter: contrast(0);
 }
 
 .star-filled-icon,
@@ -674,7 +806,7 @@ p {
 }
 
 .explore-card:hover {
-    filter: brightness(1.3);
+    filter: brightness(0.8);
 }
 
 .office-top {
@@ -742,4 +874,116 @@ p {
     justify-content: space-between;
     align-items: center;
     margin: 15px 0px;
+}
+
+.coming-soon-section {
+    display: flex;
+    margin: 50px 255px 0px 255px;
+    justify-content: space-between;
+}
+
+.coming-soon-title {
+    display: flex;
+    align-items: center;
+}
+
+.coming-soon-dot {
+    height: 4px;
+    margin-right: 7px;
+
+}
+
+.coming-soon-title p {
+    margin-right: 7px;
+    font-size: 18px;
+}
+
+.coming-soon-arrow {
+    height: 25px;
+}
+
+.coming-soon-byline {
+    color: rgba(108,108,108,255);
+    margin: 7px 0px;
+    font-size: 12px;
+}
+
+.coming-soon-carousel {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 255px 0px 255px;
+}
+
+.coming-soon-card {
+    display: flex;
+    flex-direction: column;
+    transition: filter 0.2s;
+}
+
+.coming-soon-card:hover {
+    filter: brightness(0.8);
+}
+
+.coming-soon-shot-container {
+    position: relative;
+}
+
+.coming-soon-shot {
+    height: 135px;
+    width: 240px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.coming-soon-trailer {
+    display: flex;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    align-items: center;
+    background-color: rgba(175,175,175,0.25);
+    padding: 7px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.coming-soon-trailer:hover {
+    filter: brightness(1.3);
+}
+
+.coming-soon-play {
+    height: 14px;
+    margin-right: 9px;
+    filter: brightness(10);
+}
+
+.coming-soon-trailer p {
+    font-size: 12px;
+}
+
+.coming-soon-date {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.coming-soon-calendar {
+    height: 15px;
+    margin-right: 7px;
+}
+
+.coming-soon-date p {
+    color: rgba(108,108,108,255);
+    font-size: 12px;
+}
+
+.coming-soon-name {
+    font-size: 12px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.coming-soon-name:hover {
+    text-decoration: underline;
 }
